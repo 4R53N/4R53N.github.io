@@ -9,9 +9,9 @@
     background-image: url('../images/hero.svg');
     background-position: center bottom;
     background-repeat: no-repeat; 
-    background-size: 500px;
+    background-size: 600px;
     @media (max-width: 480px) {
-        background-size: contain; 
+        background-size: 350px; 
     }
     .profile-image{
         width: 200px;
@@ -24,15 +24,15 @@
 
     span{
         color: #7510F7;
-        margin: 20px 0;
+        margin: 10px 0;
         margin-top: 20px;
         font-family: 'Share Tech Mono', monospace;
         font-weight: 350;
-        font-size: 1.8em;
+        font-size: 2.8rem;
     }
 
     p{
-        margin: 0;
+        margin: 10px 0;
         font-size: 1.3rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
@@ -40,8 +40,8 @@
     }
 
     button{
-        width: 180px;
-        height: 30px;
+        width: 200px;
+        height: 40px;
         background: white;
         appearance: none;;
         -webkit-appearance: none;
@@ -57,8 +57,8 @@
             text-align: center;
             display: block;
             align-items: center;
-            font-size: 17px;
-            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 2;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             width: 100%;
             height: 100%;

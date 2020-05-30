@@ -21,7 +21,7 @@ export default function Projects(){
                 style = {{position: "absolute", left: 0, top: 0}}
                 params = {{"particles": {
                           "number": {
-                            "value": 380,
+                            "value": 200,
                             "density": {
                               "enable": true,
                               "value_area": 800
@@ -37,7 +37,7 @@ export default function Projects(){
                               "color": "#000000"
                             },
                             "polygon": {
-                              "nb_sides": 5
+                              "nb_sides": 3
                             },
                             "image": {
                               "src": "img/github.svg",
@@ -60,7 +60,7 @@ export default function Projects(){
                             "random": true,
                             "anim": {
                               "enable": false,
-                              "speed": 40,
+                              "speed": 20,
                               "size_min": 0.1,
                               "sync": false
                             }
@@ -74,7 +74,7 @@ export default function Projects(){
                           },
                           "move": {
                             "enable": true,
-                            "speed": 6,
+                            "speed": 3,
                             "direction": "none",
                             "random": false,
                             "straight": false,

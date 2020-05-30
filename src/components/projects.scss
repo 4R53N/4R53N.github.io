@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     .projects-header{
-        min-height: 50vh;
+        min-height: 40vh;
         width: 100%;
         background: #7510F7;
         display: flex;
@@ -37,7 +37,7 @@
             box-shadow: 0 0 3px 1px #00000039;
             border-radius: 30px;
             background: white;
-            margin-bottom: 20px;
+            margin: 10px auto;
             flex-shrink:0;
             overflow: hidden;
             display: flex;
@@ -71,6 +71,7 @@
 
             .title{
                 font-family: 'Oswald', sans-serif;
+                font-size: 1.7rem;
                 margin: 0;
                 margin-top: 10px;
             }
@@ -78,11 +79,11 @@
             .description{
                 overflow: auto;
                 overflow: -moz-scrollbars-none;
-                font-family: 'Inria Serif', serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 0;
-                font-size: 0.7em;
+                font-size: 0.9rem;
                 text-align: center;
-                max-height: 78px;
+                height: 33%;
             }
            
             .description::-webkit-scrollbar {
@@ -103,8 +104,20 @@
                 animation: 0.3s image-blur-in forwards;
             }
         }
+        @media (max-width: 480px) {
+            
+            .thumbnail{
+                animation: 0.3s phone-thumbnail-hover-out forwards;
+            }
+            
+            .thumbnail:hover{
+                animation: 0.3s phone-thumbnail-hover-in forwards; 
+            }
+        }
 
-        @keyframes thumbnail-hover-in{
+        
+        
+        @keyframes phone-thumbnail-hover-in{
             from{
                 width: 300px;
                 height: 300px;
@@ -118,7 +131,7 @@
             }
         }
 
-        @keyframes thumbnail-hover-out{
+        @keyframes phone-thumbnail-hover-out{
             from{
                 width: 305px;
                 height: 305px;
@@ -128,6 +141,36 @@
             to{
                 width: 300px;
                 height: 300px;
+                padding: 0 0;
+                margin-top: 0px;
+            }
+            
+        }
+
+        @keyframes thumbnail-hover-in{
+            from{
+                width: 400px;
+                height: 500px;
+                margin-top: -0px;
+            }
+            to{
+                width: 405px;
+                height: 505px;
+                padding: 0 2.5px;
+                margin-top: -2.5px;
+            }
+        }
+
+        @keyframes thumbnail-hover-out{
+            from{
+                width: 405px;
+                height: 505px;
+                padding: 0 2.5px;
+                margin-top: -2.5px;
+            }
+            to{
+                width: 400px;
+                height: 500px;
                 padding: 0 0;
                 margin-top: 0px;
             }
