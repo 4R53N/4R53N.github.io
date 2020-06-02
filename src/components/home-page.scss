@@ -10,15 +10,28 @@
     background-position: center bottom;
     background-repeat: no-repeat; 
     background-size: 600px;
-    @media (max-width: 480px) {
+    @media 
+    (-webkit-min-device-pixel-ratio: 1.25), 
+    (min-resolution: 120dpi){ 
+
         background-size: 350px; 
     }
     .profile-image{
+        
         width: 200px;
         height: 200px;
         border-radius: 100%;
         background: url('../images/profile.png');
         background-position: -180px -260px;
+        @media 
+        (-webkit-min-device-pixel-ratio: 1.25), 
+        (min-resolution: 120dpi){ 
+            width: 150px;
+            height: 150px;
+            background-position: -113px -170px;
+            background-size: 400px;
+
+        }
     }
     
 
@@ -29,6 +42,11 @@
         font-family: 'Share Tech Mono', monospace;
         font-weight: 350;
         font-size: 2.8rem;
+        @media 
+        (-webkit-min-device-pixel-ratio: 1.25), 
+        (min-resolution: 120dpi){ 
+            font-size: 2.2rem;
+        }
     }
 
     p{
@@ -37,6 +55,11 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         width: 70%;
+        @media 
+        (-webkit-min-device-pixel-ratio: 1.25), 
+        (min-resolution: 120dpi){ 
+            font-size: 1rem;
+        }
     }
 
     button{
@@ -64,6 +87,15 @@
             height: 100%;
             text-decoration: none;
             
+        }
+        @media 
+        (-webkit-min-device-pixel-ratio: 1.25), 
+        (min-resolution: 120dpi){ 
+            width: 160px;
+            height: 30px;
+            a{
+                font-size: 1rem;
+            }
         }
     }
     

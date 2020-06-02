@@ -56,7 +56,7 @@
             .project-section-divider{
                     border: 0;
                     height: 1px;
-                    background: linear-gradient(to right, #7510F700, #7510F775, #7510F700);
+                    background: #82824040;
                     width: 90%;
                     margin: 1px;
             }
@@ -70,7 +70,7 @@
             }
 
             .title{
-                font-family: 'Oswald', sans-serif;
+                font-family: 'Share Tech Mono', monospace;
                 font-size: 1.7rem;
                 margin: 0;
                 margin-top: 10px;
@@ -150,12 +150,12 @@
         @keyframes thumbnail-hover-in{
             from{
                 width: 400px;
-                height: 500px;
+                height: 400px;
                 margin-top: -0px;
             }
             to{
                 width: 405px;
-                height: 505px;
+                height: 405px;
                 padding: 0 2.5px;
                 margin-top: -2.5px;
             }
@@ -164,13 +164,13 @@
         @keyframes thumbnail-hover-out{
             from{
                 width: 405px;
-                height: 505px;
+                height: 405px;
                 padding: 0 2.5px;
                 margin-top: -2.5px;
             }
             to{
                 width: 400px;
-                height: 500px;
+                height: 400px;
                 padding: 0 0;
                 margin-top: 0px;
             }

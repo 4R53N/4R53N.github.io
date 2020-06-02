@@ -63,7 +63,7 @@ export default function Experience(){
                         expTitle = "UC San Diego - Computer Science"
                         date = "Gradutating Jun 2021"
                         bullets = {[
-                            `GPA: 3.9`,
+                            `Major GPA: 3.96`,
                             `Provost's Honor`,
                             ]}
                     />

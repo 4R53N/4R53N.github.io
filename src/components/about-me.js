@@ -13,7 +13,7 @@ export default function AboutMe(){
         <div class = "about-me">
             <h1>ABOUT ME</h1> 
             <p>I am a Computer Science student at <span>University of California San Diego</span>. 
- In the past I have worked at UC San Diego IT Services and interned at startups like <span>Herth.io</span> and <span>Instigate</span>. Soon I will be joining <span>Amazon</span> as an SDE Intern
+ In the past I have worked at UC San Diego IT Services and interned at startups like <span>Herth.io</span> and <span>Instigate</span>. Soon, I will be joining <span>Amazon</span> as an SDE Intern
  to put my knowledge and skills in use and learn from the best minds in the industry. In my free time I pursue my interests in Machine Learning and Math and develop full stack
  applications which allow me combine my love for design and logic.</p>
             <h2>Things I am good at...</h2>

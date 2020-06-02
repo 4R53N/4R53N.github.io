@@ -3,6 +3,9 @@
     height: 40vh;
     position: relative;
     background: #7510F7;
+    @media (max-height: 700px) {
+        height: 55vh;
+    }
     .contact-content{
         position: absolute;
         left: 50%;
