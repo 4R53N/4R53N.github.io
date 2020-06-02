@@ -50,12 +50,22 @@
         .experience-section{
             background-size: 60px;
             background-repeat: no-repeat;
+            min-height: 60px;
             h4,h5{
-                font-family: 'Inria Serif', serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 5px 0;
+                font-size: 1.05rem;
             }
             h5{
                 color: #565656;
+                font-size: 1rem;
+                font-style: italic;
+            }
+            ul{
+                li{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1rem;
+                }
             }
         }
     }

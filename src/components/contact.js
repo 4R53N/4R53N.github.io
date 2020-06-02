@@ -14,7 +14,7 @@ export default function Contact(){
                 style = {{position: "absolute", left: 0, top: 0}}
                 params = {{"particles": {
                   "number": {
-                    "value": 200,
+                    "value": 150,
                     "density": {
                       "enable": true,
                       "value_area": 800
@@ -31,20 +31,15 @@ export default function Contact(){
                     },
                     "polygon": {
                       "nb_sides": 3
-                    },
-                    "image": {
-                      "src": "img/github.svg",
-                      "width": 100,
-                      "height": 100
                     }
                   },
                   "opacity": {
-                    "value": 0.5,
+                    "value": 0.8,
                     "random": false,
                     "anim": {
                       "enable": false,
                       "speed": 1,
-                      "opacity_min": 0.1,
+                      "opacity_min": 0.8,
                       "sync": false
                     }
                   },
@@ -62,12 +57,12 @@ export default function Contact(){
                     "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
-                    "opacity": 0.4,
+                    "opacity": 0.5,
                     "width": 1
                   },
                   "move": {
                     "enable": true,
-                    "speed": 3,
+                    "speed": 1,
                     "direction": "none",
                     "random": false,
                     "straight": false,
