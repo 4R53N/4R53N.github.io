@@ -123,7 +123,6 @@ export default function Contact(){
                 <p>Email: arsenohanyan@gmail.com</p>
                 <p>Tel: 818-518-7085</p>
                 <br />
-                <br />
                 <p>© Arsen Ohanyan</p>
             </div>
     </div>)
