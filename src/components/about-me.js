@@ -6,6 +6,8 @@ import CookingImage from '../images/cooking.jpg'
 import SportImage from '../images/sport.jpg'
 import BooksImage from '../images/books.jpg'
 
+import { Link } from "react-scroll"
+
 export default function AboutMe(){
     var skills = ["JAVA", "JS6","HTML5", "CSS3/SASS/LESS", "React", "Redux", "MongoDB", "C++",
                   "Node.js", "AWS", "Docker", "Git", "Linux/Unix", "..."]
@@ -49,9 +51,23 @@ export default function AboutMe(){
 
 function SkillTag(params){
     return(
-        <div class = "skill-tag">
+        <Link 
+            class = "skill-tag" 
+            to="projects" 
+            smooth={true} 
+            duration={300}
+            onClick = {() => {
+                document.querySelectorAll('[id*=\''+params.skill.toLowerCase()+'\']').forEach(node => {
+                    let original = node.className;
+                    node.className = node.className + ' active'
+                    setTimeout(()=>{
+                        node.className = original;
+                    }, 3000);
+                })
+            }}
+        >
             {params.skill}
-        </div>
+        </Link>
     )
 }
 

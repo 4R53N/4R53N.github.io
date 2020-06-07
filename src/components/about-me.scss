@@ -19,7 +19,7 @@
         text-align: center;
         width: 70%;
         color: black;
-        font-size: 1.25em;
+        font-size: 1.15em;
         span{
             color: #7510F7;
         }
@@ -38,11 +38,16 @@
         align-items: center;
         background: #7510F7;
         box-shadow: 3px 3px 6px #00000043;
-        font-family: 'HacK';
+        font-family: 'HacK', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
         border-radius: 10px;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         margin: 0 20px 20px 0;
+        cursor: pointer;
+    }
+
+    .skill-tag:active{
+        box-shadow: none;
     }
 
     .skills-container{

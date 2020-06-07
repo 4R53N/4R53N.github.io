@@ -135,6 +135,7 @@ export default function Projects(){
                 description = {` POS system developed using MERN Stack for managing inventory 
                                  and customer data, executing sales and viewing reports`}
                 technologies = "React, Node.js/Express, HTML5/CSS3, MongoDB, AJAX"
+                tags = {['react', 'node.js', 'express', 'html5', 'css3/sass/less', 'mongodb', 'ajax', 'js', 'git']}
               />
               <ProjectThumbnail 
                 title = "OptiEat"
@@ -144,6 +145,7 @@ export default function Projects(){
                 for the application that scans grocery shopping receipts and provides user a 
                 meal plan of recipes to minimize the waste. Reduced waste from 38% to 0%.`}
                 technologies = "React 16.9, Node JS/Express, HTML5, CSS3, AWS, Heroku, AWS, ML"
+                tags = {['react', 'node.js', 'express', 'html5', 'css3/sass/less', 'mongodb', 'ajax', 'js', 'git', 'aws']}
               />
               <ProjectThumbnail 
                 title = "Best Project Ever"
@@ -152,6 +154,7 @@ export default function Projects(){
                 description = {` Yep, you guessed right, it is still under construction.
                                  Until then, enjoy a free link to google.com`}
                 technologies = "Crazy advanced technology used here."
+                tags = {[]}
               />
             </div>
         </div>
@@ -160,7 +163,7 @@ export default function Projects(){
 
 function ProjectThumbnail(params){
   return(
-    <div class = "thumbnail">
+    <div class = "thumbnail" id={params.tags.join(' ')}>
       <a href = {params.link} target="_blank"><img src={params.thumbnail} />  
         <h4 class = "title">{params.title}</h4>
         <hr class = "project-section-divider" /> 

@@ -45,11 +45,11 @@ const Header = ({ siteTitle }) => {
   return <header className={!isOnTop ? 'active' : ''}>
     <nav>
     <Link smooth={true} duration = {300} to = "home-page">
-      <div class = "logo-container">
+      <div className = "logo-container">
       </div>
     </Link>
-      <ul class = "nav-buttons">
-        <li class = "active" id="home-button"><Link smooth={true} duration = {300} to = "home-page">Home</Link></li>
+      <ul className = "nav-buttons">
+        <li className = "active" id="home-button"><Link smooth={true} duration = {300} to = "home-page">Home</Link></li>
         <li>|</li>
         <li id="about-button"><Link smooth={true} duration = {300} to = "about-me">About</Link></li>
         <li>|</li>

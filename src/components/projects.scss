@@ -28,7 +28,7 @@
         position: relative;
         width: 80%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: -150px;
         
@@ -97,12 +97,20 @@
                 text-align: center;
             }
         }
+        .thumbnail.active{
+            animation: active-project 3s cubic-bezier(1, 0.02, 1, 0.96) forwards;
+        }
+        
 
         .thumbnail:hover{
             animation: 0.3s thumbnail-hover-in forwards; 
             img{
                 animation: 0.3s image-blur-in forwards;
             }
+        }
+
+        .thumbnail.active:hover{
+            animation: active-project 3s cubic-bezier(1, 0.02, 1, 0.96) forwards;
         }
         @media (max-width: 480px) {
             
@@ -115,7 +123,20 @@
             }
         }
 
-        
+        @keyframes active-project {
+            from{
+                box-shadow: 0 0 22px 3px #7510f780;
+                width: 305px;
+                height: 305px;
+                margin-top: -2.5px;
+            }
+            to{
+                box-shadow: 0 0 3px 1px #00000039;
+                width: 305px;
+                height: 305px;
+                margin-top: -2.5px;
+            }
+        }
         
         @keyframes phone-thumbnail-hover-in{
             from{
