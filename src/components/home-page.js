@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import './home-page.scss';
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
+import resume from '../assets/resume.pdf'
 
 export default function HomePage(){
    return ( <div class = "home-page">
@@ -13,6 +14,6 @@ export default function HomePage(){
         />
        <p>A curious computer tinkerer with passion for everything that makes the gray matter work</p>
        <button class = "view-work-button"><Link smooth={true} duration = {500} to = "about-me">More About Me ⇓</Link></button>
-       <button class = "resume-button"><a href = "https://drive.google.com/file/d/17iYD6cV5WVIY0wqQ_IUauY1LkAXp6GMX/view?usp=sharing" target = "_blank">Resume</a></button>
+       <button class = "resume-button"><a href = {resume} target = "_blank">Resume</a></button>
     </div>)
 }
