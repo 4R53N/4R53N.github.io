@@ -3,6 +3,7 @@ import React from 'react'
 import './experience.scss'
 
 import AmazonImage from '../images/amazon-logo.png';
+import ACMImage from '../images/acm-logo.png';
 import GCCImage from '../images/GCC-logo.png';
 import HerthImage from '../images/herth.png';
 import UCImage from '../images/UC-logo.png';
@@ -16,9 +17,9 @@ export default function Experience(){
                     <h3>Work Experience</h3>
                     <ExperienceSection 
                         imageURL = {AmazonImage}
-                        expTitle = "Incoming SDE Intern at Amazon"
+                        expTitle = "SDE Intern at Amazon"
                         date = "Dec 2019 - Present"
-                        bullets = {[
+                        bullets = {[ 'Currently, developing the Transfer Pricing Engine and the MJE system at Amazon for the Fintech Team.'
                             ]}
                     />
                     <ExperienceSection 
@@ -63,8 +64,17 @@ export default function Experience(){
                         expTitle = "UC San Diego - Computer Science"
                         date = "Gradutating Jun 2021"
                         bullets = {[
-                            `Major GPA: 3.96`,
+                            `Major GPA: 3.98`,
                             `Provost's Honor`,
+                            ]}
+                    />
+                    <ExperienceSection 
+                        imageURL = {ACMImage}
+                        expTitle = "ACM at UCSD"
+                        date = "March 2019 - Present"
+                        bullets = {[
+                            `Developed and maintained the membership portal for over 1000 members. `,
+                            `Taught Python and Web Development to freshmen.`,
                             ]}
                     />
                     <ExperienceSection 
