@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/page-2.js"],"names":["BS"],"mappings":"2FAAA,wEAEe,SAASA,IACpB,OAAO","file":"component---src-pages-page-2-js-42f78963c7fdc4b165f6.js","sourcesContent":["import React from 'react'\n\nexport default function BS(){\n    return <div></div>\n}"],"sourceRoot":""}
